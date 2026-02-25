@@ -1,6 +1,6 @@
 {
   "name": "osrs-companion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OSRS companion MCP - wiki search, GE prices, and local player data for AI assistants",
   "type": "module",
   "bin": {

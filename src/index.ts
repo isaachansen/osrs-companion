@@ -109,8 +109,8 @@ interface PlayerSyncData {
 
 const WIKI_API = "https://oldschool.runescape.wiki/api.php";
 const PRICES_API = "https://prices.runescape.wiki/api/v1/osrs";
-const USER_AGENT = "osrs-mcp-companion/1.0 (Node.js; github.com/isaachansen/osrs-mcp-companion)";
-const SYNC_DIR = join(homedir(), ".runelite", "mcp-sync");
+const USER_AGENT = "osrs-companion/1.0 (Node.js; github.com/isaachansen/osrs-companion)";
+const SYNC_DIR = join(homedir(), ".runelite", "osrs-companion");
 
 // ── Wiki / Price Helpers ────────────────────────────────────────────────
 

@@ -67,7 +67,7 @@ npx -y osrs-companion
 
 The MCP server runs locally via stdio transport. Wiki and price tools
 fetch from public OSRS APIs. Player sync tools read JSON files from
-`~/.runelite/mcp-sync/` that are written by the companion RuneLite plugin.
+`~/.runelite/osrs-companion/` that are written by the companion RuneLite plugin.
 
 No data is stored in the cloud. No API keys required.
 

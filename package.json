@@ -1,0 +1,35 @@
+{
+  "name": "osrs-companion",
+  "version": "1.0.0",
+  "description": "OSRS companion MCP - wiki search, GE prices, and local player data for AI assistants",
+  "type": "module",
+  "bin": {
+    "osrs-companion": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "osrs",
+    "runescape",
+    "runelite",
+    "mcp",
+    "model-context-protocol",
+    "wiki",
+    "ai"
+  ],
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "5.9.2"
+  }
+}

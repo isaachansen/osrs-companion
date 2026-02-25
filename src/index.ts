@@ -111,6 +111,7 @@ const WIKI_API = "https://oldschool.runescape.wiki/api.php";
 const PRICES_API = "https://prices.runescape.wiki/api/v1/osrs";
 const USER_AGENT = "osrs-companion/1.0 (Node.js; github.com/isaachansen/osrs-companion)";
 const SYNC_DIR = join(homedir(), ".runelite", "osrs-companion");
+const WIKI_ATTRIBUTION = "\n\n---\nContent from the [Old School RuneScape Wiki](https://oldschool.runescape.wiki), licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).";
 
 // ── Wiki / Price Helpers ────────────────────────────────────────────────
 
@@ -272,7 +273,7 @@ server.tool(
     });
 
     return {
-      content: [{ type: "text", text: `Found ${results.length} results:\n\n${lines.join("\n\n")}` }],
+      content: [{ type: "text", text: `Found ${results.length} results:\n\n${lines.join("\n\n")}${WIKI_ATTRIBUTION}` }],
     };
   }
 );
@@ -304,7 +305,7 @@ server.tool(
     }
 
     return {
-      content: [{ type: "text", text: `# ${page.title}\n\n${extract}\n\n${pageUrl(page.title)}` }],
+      content: [{ type: "text", text: `# ${page.title}\n\n${extract}\n\n${pageUrl(page.title)}${WIKI_ATTRIBUTION}` }],
     };
   }
 );

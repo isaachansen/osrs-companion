@@ -71,6 +71,18 @@ fetch from public OSRS APIs. Player sync tools read JSON files from
 
 No data is stored in the cloud. No API keys required.
 
+## Attribution
+
+Wiki content returned by the `search` and `summary` tools is sourced from the
+[Old School RuneScape Wiki](https://oldschool.runescape.wiki), which is licensed
+under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+All wiki tool responses include an attribution notice automatically.
+
+Grand Exchange price data is provided by the
+[OSRS Wiki Prices API](https://prices.runescape.wiki). Player data is fetched
+via the [WikiSync API](https://sync.runescape.wiki) or read from local files
+saved by the RuneLite plugin — neither contains wiki article content.
+
 ## License
 
 BSD 2-Clause "Simplified" License. See [LICENSE](LICENSE).
